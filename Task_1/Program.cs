@@ -1,8 +1,8 @@
 ﻿string[] CreateStringArray1(int n) {  
-    string[] array = new string[n]; //Объявляем массив длиной n (которую ввёл пользователь)
+    string[] array = new string[n]; 
         for (int i = 0; i < n; i++) {
             Console.Write("Введите элемент массива №{0}:\n", i + 1);
-            array[i] = Console.ReadLine(); //Заполняем его            
+            array[i] = Console.ReadLine();             
     }
     return array;
 }
@@ -14,7 +14,8 @@ string[] CreateStringArray2(string[] array) {
     }
     string[] newArray = new string[count];
     for(int i = 0, j = 0; i < array.Length; i++) {
-        if(array[i].Length <= 3) {
+        if(array[i].Length <= 3) 
+        {
             newArray[j] = array[i];
             j++;
         }
