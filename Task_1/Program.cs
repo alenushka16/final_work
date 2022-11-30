@@ -26,14 +26,14 @@ void PrintStringArray(string[] array) {
     Console.Write("[");
     for(int i = 0; i < array.Length; i++) {
         Console.Write("\"" + array[i] + "\"");
-        if(i < array.Length -1)  // если это не последний элемент, ставим запятую после элемента.
+        if(i < array.Length -1)  
             Console.Write(", ");
     }
     Console.Write("]");
     Console.Write(" -> ");
 }
 Console.Write("Введите количество строк массива, которые хотите ввести:\n");
-int n = Convert.ToInt32(Console.ReadLine()); // Считываем строку, переводим в число.
+int n = Convert.ToInt32(Console.ReadLine()); 
 string[] array = CreateStringArray1(n);
 PrintStringArray(array);
 string[] myArray = CreateStringArray2(array);
@@ -41,3 +41,5 @@ PrintStringArray(myArray);
 Console.WriteLine();
 Console.WriteLine("Нажмите [Enter] для выхода...");
 Console.ReadLine();
+
+
